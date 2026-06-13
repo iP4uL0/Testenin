@@ -417,3 +417,85 @@ img{
   background: var(--rose-deep);
   transform: scale(1.1);
 }
+
+@media (max-width: 480px) {
+ 
+  /* Hero */
+  .hero {
+    padding: 1.5rem 1.2rem;
+    min-height: 100svh;
+  }
+  .hero h1 {
+    font-size: clamp(2.6rem, 14vw, 3.5rem);
+  }
+  .tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+  }
+  .heart-divider::before,
+  .heart-divider::after {
+    width: 30px;
+  }
+  .scroll-hint {
+    bottom: 1.5rem;
+    font-size: 0.68rem;
+  }
+ 
+  /* Foto (se tiver) */
+  .hero-foto {
+    width: 160px;
+    height: 160px;
+  }
+ 
+  /* Carta */
+  .letter-section {
+    padding: 3rem 1rem 5rem;
+  }
+  .letter-card {
+    padding: 2.8rem 1.2rem 2rem;
+  }
+  .letter-card p {
+    font-size: 0.97rem;
+    line-height: 1.8;
+  }
+  .signature {
+    font-size: 0.95rem;
+  }
+ 
+  /* Gate */
+  .gate-box {
+    padding: 2.2rem 1.4rem;
+    width: 92%;
+    border-radius: 12px;
+  }
+  .gate-title {
+    font-size: 1.6rem;
+  }
+  .gate-sub {
+    font-size: 0.92rem;
+  }
+  .gate-rose {
+    font-size: 2.2rem;
+  }
+  .btn-yes {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.6rem;
+  }
+  .btn-no {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.3rem;
+  }
+ 
+  /* Vinyl player */
+  .vinyl-player {
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    border-radius: 50px;
+    justify-content: space-between;
+  }
+  .vinyl-info {
+    max-width: none;
+    flex: 1;
+  }
+}
