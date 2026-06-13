@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para a Mary 🌹</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== TELA DE ENTRADA ===== -->
+<div id="gate">
+  <div class="hearts-bg" aria-hidden="true">
+    <span class="h" style="left:8%;  animation-duration:14s; animation-delay:0s;   font-size:4rem;">♥</span>
+    <span class="h" style="left:22%; animation-duration:18s; animation-delay:3s;   font-size:7rem;">♥</span>
+    <span class="h" style="left:55%; animation-duration:12s; animation-delay:1s;   font-size:3rem;">♥</span>
+    <span class="h" style="left:75%; animation-duration:20s; animation-delay:5s;   font-size:6rem;">♥</span>
+    <span class="h" style="left:88%; animation-duration:16s; animation-delay:2s;   font-size:4rem;">♥</span>
+    <span class="h" style="left:40%; animation-duration:22s; animation-delay:7s;   font-size:8rem;">♥</span>
+  </div>
+
+  <div class="gate-box">
+    <div class="gate-rose">🌹</div>
+    <h2 class="gate-title">Oi, Mary!</h2>
+    <p class="gate-sub">Tem uma cartinha especial esperando por você.<br>Quer ver?</p>
+    <div class="gate-buttons">
+      <button class="btn-yes" onclick="openLetter()">Sim, quero! 💌</button>
+      <button class="btn-no" id="btnNo">Não</button>
+    </div>
+    <p class="no-count" id="noCount"></p>
+  </div>
+</div>
+
+<!-- ===== CARTA (oculta inicialmente) ===== -->
+<div id="main" style="display:none;">
+
+  <div class="hearts-bg" aria-hidden="true">
+    <span class="h" style="left:8%;  animation-duration:14s; animation-delay:0s;   font-size:4rem;">♥</span>
+    <span class="h" style="left:22%; animation-duration:18s; animation-delay:3s;   font-size:7rem;">♥</span>
+    <span class="h" style="left:55%; animation-duration:12s; animation-delay:1s;   font-size:3rem;">♥</span>
+    <span class="h" style="left:75%; animation-duration:20s; animation-delay:5s;   font-size:6rem;">♥</span>
+    <span class="h" style="left:88%; animation-duration:16s; animation-delay:2s;   font-size:4rem;">♥</span>
+    <span class="h" style="left:40%; animation-duration:22s; animation-delay:7s;   font-size:8rem;">♥</span>
+  </div>
+
+  <div aria-hidden="true" id="petals"></div>
+
+  <!-- AUDIO -->
+  <audio id="musica" src="Art of War avenoir.mp3" loop></audio>
+
+  <!-- DISCO PLAYER -->
+  <div class="vinyl-player" id="vinylPlayer">
+    <div class="vinyl-disc" id="vinylDisc">
+      <div class="vinyl-label">
+        <span class="vinyl-note">🎵</span>
+      </div>
+    </div>
+    <div class="vinyl-info">
+      <span class="vinyl-title" id="vinylTitle">Art of war - avenoir</span>
+      <span class="vinyl-status" id="vinylStatus">tocando ♪</span>
+    </div>
+    <button class="vinyl-btn" id="vinylBtn" onclick="toggleMusic()">⏸</button>
+  </div>
+
+  <section class="hero">
+    <p class="tag">12 de junho · Dia dos Namorados</p>
+    <h1>Para a<br><em>Mary</em></h1>
+     <img src="marylindona.jpg" alt="Nossa foto" class="hero-foto">
+     <p id="textinho">(Minha foto favorita sua)</p>
+    <div class="heart-divider">🌹</div>
+    <div class="scroll-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+      continue
+    </div>
+  </section>
+  <section class="letter-section">
+    <div class="letter-card">
+      <div class="seal" aria-hidden="true">🌹</div>
+
+      <p>Oi Mary, tudo bem? um poquinho atrasado né? kkkkkk</p>
+
+      <p>Sei que não é muito mas,estou escrevendo essa cartinha pra te falar que, já nesse pequeno tempo que nos conhecemos, você se tornou uma pessoa muito especial pra mim.(Até porque pra me motivar acordar 7hrs da manhã num sábado n é qualquer pessoa que faz kkkk)</p>
+
+      <p>E eu espero ter a oportunidade te conhecer e escrever uma linda história com essa mulher incrível, curiosa e poética que você é!</p>
+
+      <p style="text-align:center; font-size:1.3rem; margin-top:2rem; font-style:normal;">🌹 &nbsp; Feliz Dia dos Namorados, meu bem! &nbsp; 🌹</p>
+
+      <div class="signature">Com carinho, Paulo ♥</div>
+    </div>
+  </section>
+
+  <div class="footer-roses" aria-hidden="true">🌹 🌹 🌹</div>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
