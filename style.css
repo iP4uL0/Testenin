@@ -282,9 +282,9 @@ body {
 .btn-yes:hover { background: var(--rose-deep); transform: scale(1.04); }
 
 .btn-no {
-  background: transparent;
-  color: var(--cream);
-  border: 1px solid var(--text);
+  background: var(--rose-pale);
+  color: var(--rose-deep);
+  border: none;
   border-radius: 50px;
   padding: 0.75rem 1.6rem;
   font-family: 'Lato', sans-serif;
